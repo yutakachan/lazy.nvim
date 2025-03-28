@@ -18,8 +18,10 @@ keymap.set("n", "<C-m>", "<C-i>", opts)
 
 -- New Tab
 keymap.set("n", "te", ":tabedit<Return>", opts)
-keymap.set("n", "tt", ":tabnext<Return>", opts)
-keymap.set("n", "tr", ":tabprev<Return>", opts)
+-- keymap.set("n", "tt", ":tabnext<Return>", opts)
+-- keymap.set("n", "tr", ":tabprev<Return>", opts)
+keymap.set("n", "<tab>", ":tabnext<Return>", opts)
+keymap.set("n", "<S-tab>", ":tabprev<Return>", opts)
 
 -- Split Window
 keymap.set("n", "ss", ":split<Return>", opts)
